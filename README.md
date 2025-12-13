@@ -7,12 +7,21 @@ My personal development environment configuration
   - [Features](#features)
   - [Quick Start](#quick-start)
   - [What's Includes](#whats-includes)
+    - [Git](#git)
   - [Credits](#credits)
   - [About Me](#about-me)
 
 ## Prerequisites
 
+- My **OS** usage: Windows 11
+- **Tools**:
+  - PowerShell 7+
+  - Git
+  - GnuPG (for GPG signing)
+
 ## Features
+
+- Git configuration
 
 ## Quick Start
 
@@ -20,6 +29,8 @@ My personal development environment configuration
 
   ```md
   .
+  ├── git
+  ├── git
   ├── LICENSE
   └── README.md
   ```
@@ -35,6 +46,15 @@ My personal development environment configuration
 2. Choose what to set up and follow the step-by-step guide in each `README.md` file
 
 ## What's Includes
+
+### Git
+
+- **Features**:
+  - SSH authentication with GitHub
+  - GPG commit signing for verified commits
+  - Custom aliases and configurations
+  - Global ignore patterns
+- **Setup**: See [git/README.md](./git/README.md)
 
 ## Credits
 
