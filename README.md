@@ -5,24 +5,41 @@ My personal development environment configuration
 - [Dotfiles](#dotfiles)
   - [Prerequisites](#prerequisites)
   - [Features](#features)
+    - [Git configuration](#git-configuration)
   - [Quick Start](#quick-start)
-  - [What's Includes](#whats-includes)
   - [Credits](#credits)
   - [About Me](#about-me)
 
 ## Prerequisites
 
+- My **OS** usage: Windows 11
+- **Tools**:
+  - PowerShell 7+
+  - Git
+  - GnuPG (for GPG signing)
+  - Fzf
+
 ## Features
 
-## Quick Start
-
-- **Project Structures**
+- Structure
 
   ```md
   .
+  ├── git/            # Git configuration
   ├── LICENSE
   └── README.md
   ```
+
+### Git configuration
+
+- **Features**:
+  - SSH authentication with GitHub
+  - GPG commit signing for verified commits
+  - Custom aliases and configurations
+  - Global ignore patterns
+- **Setup**: See [git/README.md](./git/README.md)
+
+## Quick Start
 
 1. Clone the repository
 
@@ -32,9 +49,7 @@ My personal development environment configuration
     cd dotfiles
     ```
 
-2. Choose what to set up and follow the step-by-step guide in each `README.md` file
-
-## What's Includes
+2. Navigate to specific configuration. Follow the `README.md` in each directory for setup instructions.
 
 ## Credits
 
