@@ -1,3 +1,28 @@
+#========== Prompt ==========#
+$omp_config_path = Join-Path $PSScriptRoot 'ngkhang.omp.json'
+oh-my-posh init pwsh --config $omp_config_path | Invoke-Expression
+
+#========= PSReadLine settings =========#
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -BellStyle None
+Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadLineOption -ShowToolTips
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+
+#========== Import Modules ==========#
+Import-Module Terminal-Icons
+Import-Module z
+Import-Module PSFzf
+Import-Module posh-git
+
+#========== Fzf ==========#
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+
 #========= Alias =========#
 Set-ALias g git
 
