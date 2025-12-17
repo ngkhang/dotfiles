@@ -7,6 +7,7 @@ My personal development environment configuration
   - [Features](#features)
     - [Git configuration](#git-configuration)
     - [PowerShell \& Terminal](#powershell--terminal)
+    - [VSCode](#vscode)
   - [Quick Start](#quick-start)
   - [Credits](#credits)
   - [About Me](#about-me)
@@ -23,6 +24,7 @@ My personal development environment configuration
   - GnuPG (for Git commit signing)
   - Fzf (fuzzy finder)
   - Oh My Posh (custom prompt)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Features
 
@@ -30,9 +32,10 @@ My personal development environment configuration
 
   ```md
   .
-  ├── git/            # Git configuration
-  ├── metadata/       # Fonts and additional resources
-  ├── powershell      # PowerShell & Terminal setup
+  ├── git/                # Git configuration
+  ├── metadata/           # Fonts and additional resources
+  ├── powershell/         # PowerShell & Terminal setup
+  ├── vscode-config/      # VSCode setup
   ├── LICENSE
   └── README.md
   ```
@@ -61,6 +64,13 @@ My personal development environment configuration
 
 **Setup**: [powershell/README.md](./powershell/README.md)
 
+### VSCode
+
+- Adds VSCode settings (e.g. theme, color scheme, fonts) and extensions
+- Adds keybindings and code snippets
+
+**Setup**: [vscode-config/README.md](./vscode-config/README.md)
+
 ## Quick Start
 
 1. Clone the repository
@@ -82,6 +92,8 @@ My personal development environment configuration
 - [Terminal-Icons](https://github.com/devblackops/Terminal-Icons) - File icons
 - [Z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - [Posh-Git](https://github.com/dahlbyk/posh-git) - Git integration
+- [Nerd Font](https://www.nerdfonts.com/font-downloads) - Nerd fonts
+- [Visual Studio Code](https://code.visualstudio.com/) - IDE
 
 ## About Me
 
